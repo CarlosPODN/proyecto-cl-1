@@ -15,17 +15,6 @@ export default function Body() {
 
 //function for quantityer weights
 
-const [item, setitem] = useState(0)
-
-
-function tryal (){
-    console.log(item)
-    setitem(previo =>{
-        previo = previo + 1;
-    })
-    console.log(item,'despues')
-}
-
 const [items, setItems]= useState([
     {id: 0, type:'Bed', weight: 1.2, quantity:0, icon:BedsIcon},
     {id: 1, type:'refrigerator', weight:1, quantity: 0, icon:RefrigeratorIcon},
@@ -42,14 +31,17 @@ const [items, setItems]= useState([
 function accion(n){
     setItems((currentquantity)=>{
         console.log(n)
-        return currentquantity.map(item=>{
+        return currentquantity.forEach(item=>{
             if(n === item.id){
+                console.log('se logro', n, item.id)
                 return {...item, quantity: item.quantity + 1}
+            }else{
+                return item
             }
         })
-        console.log(items[0])
     })
 }
+console.log(items[2])
 // const accion = (weight) =>{
 //     console.log(items[weight], 'intento 1')
 //     items[weight] = items[weight] + 1;
@@ -83,10 +75,10 @@ return (
                         <div className="counterIcon">
                             <button className="boton">-</button>
                             <div className="counterNmb">
-                            <h4>{item}</h4>
+                            <h4>{items[1].quantity}</h4>
                             </div>
-                            <button className="boton" onClick={()=>{tryal()}}
-                            weight={1}>+</button>
+                            <button className="boton" onClick={()=>{accion(1)}}
+                            value={1}>+</button>
                         </div>
                     </div>
                     <div>
