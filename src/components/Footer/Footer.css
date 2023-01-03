@@ -1,0 +1,42 @@
+.headerColor{
+    width:100%;
+    height: 600px;
+    background-color: #FD9255;
+    display:flex;
+    justify-content: center;
+}
+.headerArea{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+    color:white;
+}
+.infoIcons{
+    align-items: center;
+    width:20%;
+    height: 50%;
+}
+.icons{
+    margin-top:40px;
+    width:auto;
+    display:flex;
+}
+.icon{
+    border: 3px solid #FFFFFF;
+    border-radius: 38px;
+    width: 36.32px;
+    height: 36px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:10px;
+}
+
+ul{
+    padding-left:0px;
+}
+ul>li{
+    display:flex;
+}

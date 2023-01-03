@@ -1,0 +1,117 @@
+.bodyColor{
+    background-color: #FDFDFD;
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: center;
+}
+.bodyArea{
+    width:80%;
+    
+}
+.center{
+    display:flex;
+    justify-content: center;
+}
+.Ptitle{
+    margin-top:0px;
+    margin-bottom:125px;
+    width: 45%;
+    text-align: center;
+}
+.gridArea{
+    height: 1000px;
+}
+.iconsArea{
+    width: 220px;
+    height: 300px;
+}
+.itemIcon{
+    text-align: center;
+    width: 220px;
+    height: 222px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgb(0 0 0 / 8%);
+    border-radius: 0px;
+    align-items: center;
+    display: inline-grid
+}
+.itemIcon>p{
+    width: 100%;
+}
+.counterIcon{
+    display:flex;
+    height:50px;
+    width:220px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CCCCCC;
+    margin-top:27px;
+    border-radius: 5px;
+}
+.boton{
+    border: 1px solid #CCCCCC;
+    background-color: #CCCCCC;
+    width:50px;
+}
+.boton:hover{
+    background-color: #afadad;
+    height: 100%;
+    border-radius: 5px;
+}
+.counterNmb{
+    background-color: #FFFFFF;
+    height: 95%;
+    width:100%;
+    border-radius:2px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.counterNmb>h4{
+    margin-bottom: 3px;
+}
+.calculate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.clearBox{
+    width: 200px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #FD9255;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+.calculateBox{
+    width: 200px;
+    height: 60px;
+    background: #FD9255;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.result{
+    align-content: center;
+}
+.summary{
+    text-align: center;
+    margin-bottom:35px;
+}
+.summaryArea{
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.summaryColor{
+    width:50%;
+    height: auto;
+    margin:20px;
+    background:#F9F9F9;
+}
