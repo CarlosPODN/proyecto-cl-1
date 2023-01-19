@@ -14,9 +14,7 @@ import { ReactComponent as WardroveIcon } from "../../Icons/wardroveIcon.svg";
 
 export default function Body() {
 const resultado = useRef(0)
-
 const [cantidad, SetCantidad] = useState(0)
-//function for quantityer weights
 const [Totales, setTotales] = useState([
     {id: 0, name:'Total m²', value:0},
     {id: 1, name:'subTotal', value:0},
@@ -53,19 +51,20 @@ const calcular = () =>{
             case 0:
                 return {...totalTipo, value : resultado.current }
             case 1:
-                return {...totalTipo, value : resultado.current * 200 }
+                return {...totalTipo, value : (resultado.current * 200).toFixed(2) }
             case 2:
-                return {...totalTipo, value : (resultado.current * 200) * 0.16 }
+                return {...totalTipo, value : ((resultado.current * 200) * 0.16).toFixed(2) }
             case 3:
-                return {...totalTipo, value : ((resultado.current * 200) * 0.16) + resultado.current * 200}
+                return {...totalTipo, value : (((resultado.current * 200) * 0.16) + resultado.current * 200).toFixed(2)}
             case 4:
-                return {...totalTipo, value : (((resultado.current * 200) * 0.16) + resultado.current * 200) * 0.5 }
+                return {...totalTipo, value : ((((resultado.current * 200) * 0.16) + resultado.current * 200) * 0.5).toFixed(2) }
             default:
                 return {...totalTipo, value : totalTipo.value + 1 }
         }
     }
         ))
 }
+
 //funcion para limpiar los resultados y items escogidos
 const clear = ()=>{
     setItems(items.map((total)=>{
