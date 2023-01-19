@@ -1,6 +1,6 @@
 import React from "react"
 import "./Header.css"
-import { ReactComponent as HouseIcon } from "../../icon-casita.svg";
+import { ReactComponent as HouseIcon } from "../../Icons/icon-casita.svg";
 
 export default function Navbar() {
     return (
@@ -10,10 +10,10 @@ export default function Navbar() {
                     <a><HouseIcon /></a>
                 </div>
                 <ul className="navList">
-                    <li><a>How We Work</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Free Quote</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a href="#">How We Work</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Free Quote</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>

@@ -1,68 +1,61 @@
-.bodyColor{
-    background-color: #FDFDFD;
-    width:100%;
-    height:auto;
-    display:flex;
-    justify-content: center;
-}
-.bodyArea{
-    width:80%;
-    
-}
-.center{
-    display:flex;
-    justify-content: center;
-}
-.Ptitle{
-    margin-top:0px;
-    margin-bottom:125px;
-    width: 45%;
+
+
+.title{
     text-align: center;
+    margin-bottom: 15vh;
 }
-.gridArea{
-    height: 1000px;
+.itemArea{
+    display: grid;
+    grid-template-columns: 12vw 12vw 12vw 12vw 12vw;
+    width: 60vw;
+    margin:0 auto;
 }
-.iconsArea{
-    width: 220px;
-    height: 300px;
+.gridIcon{
+    max-width: 5vw;
+    max-height: 3.5vw;
+    margin: 0 auto;
+    margin-bottom: 2vh;
 }
 .itemIcon{
     text-align: center;
-    width: 220px;
-    height: 222px;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 40px rgb(0 0 0 / 8%);
-    border-radius: 0px;
-    align-items: center;
-    display: inline-grid
-}
-.itemIcon>p{
     width: 100%;
+    min-height: 20vh;
+    background: #FFFFFF;
+    box-shadow: 0 0.7em 3em rgb(0 0 0 / 8%);
+    border-radius: 0.7em;
+    display: inline-grid;
+    align-content: center;
 }
 .counterIcon{
     display:flex;
-    height:50px;
-    width:220px;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: #CCCCCC;
-    margin-top:27px;
-    border-radius: 5px;
 }
-.boton{
+.boton-left{
     border: 1px solid #CCCCCC;
     background-color: #CCCCCC;
-    width:50px;
+    width:3vw;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
 }
-.boton:hover{
+.boton-right{
+    border: 1px solid #CCCCCC;
+    background-color: #CCCCCC;
+    width:3vw;
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+.boton-left:hover{
     background-color: #afadad;
-    height: 100%;
-    border-radius: 5px;
+}
+.boton-right:hover{
+    background-color: #afadad;
 }
 .counterNmb{
     background-color: #FFFFFF;
-    height: 95%;
     width:100%;
+    height: auto;
     border-radius:2px;
     display:flex;
     align-items: center;
@@ -72,8 +65,10 @@
     margin-bottom: 3px;
 }
 .calculate{
+    width:60vw;
     display: flex;
     justify-content: space-between;
+    margin:0 auto;
 }
 
 .clearBox{
@@ -95,23 +90,26 @@
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    border:1px solid #9f4e1f 
+}
+.calculateBox:hover{
+    background: #d1601f ;
+}
+.clearBox:hover{
+    background:rgb(222, 223, 223)
 }
 .result{
+    margin:0 auto;
     align-content: center;
+    width:20vw
+}
+.totals{
+    display: flex;
+    justify-content: space-between;
 }
 .summary{
     text-align: center;
     margin-bottom:35px;
 }
-.summaryArea{
-    width:100%;
-    display:flex;
-    justify-content: center;
-}
-.summaryColor{
-    width:50%;
-    height: auto;
-    margin:20px;
-    background:#F9F9F9;
-}
+
